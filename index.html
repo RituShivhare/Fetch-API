@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public API Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .post {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .post h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .post p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+        .loading {
+            text-align: center;
+            font-size: 1.1em;
+            color: #007bff;
+        }
+        .error {
+            text-align: center;
+            font-size: 1.1em;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data from Public API (JSONPlaceholder Posts)</h1>
+        <div id="data-container">
+            <p class="loading">Loading data...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
